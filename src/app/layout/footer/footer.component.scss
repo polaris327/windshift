@@ -2,9 +2,35 @@
 @import 'variables';
 
 .footer-component {
-  position: relative;
-  z-index: 100;
-  height: $header-height;
-  background-color: $white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  background: $light-blue;
+  justify-content: space-evenly;
+  height: 230px;
+  margin-top: 36px;
+  padding: 30px;
+
+  .logo {
+    max-width: 70px;
+    margin-bottom: 27px;
+  }
+
+  .title {
+    font-family: "proxima_novabold", Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: $white;
+    margin-bottom: 32px;
+  }
+
+  a {
+    cursor: pointer;
+    font-family: "proxima_novaregular", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.67;
+    color: $white;
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+  }
 }

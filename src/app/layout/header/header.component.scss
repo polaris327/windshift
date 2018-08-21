@@ -2,9 +2,82 @@
 @import 'variables';
 
 .header-component {
-  position: relative;
-  z-index: 100;
+  position: fixed;
+  width: 100%;
   height: $header-height;
-  background-color: $white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, 0.3);
+  transition: ease-in-out 0.5s all;
+
+  &.opacity {
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, 0);
+
+    .left-nav-container {
+      .app-logo {
+        background-color: rgba(243,92,83, 0);
+      }
+    }
+
+    .right-nav-container {
+      border: none;
+
+      > a {
+        color: rgba(0, 0, 0, 1);
+
+        &:hover {
+          color: $light-blue;
+        }
+      }
+    }
+  }
+
+  .left-nav-container {
+    position: relative;
+
+    .app-logo {
+      cursor: pointer;
+      min-width: 171px;
+      height: 100%;
+      transition: ease-in-out 0.5s all;
+      
+      img {
+        max-width: 91px;
+      }
+    }
+  }
+
+  .right-nav-container {
+    justify-content: flex-end;
+    max-width: 656px;
+    width: 100%;
+    padding-right: 55px;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 100%;
+      border: none;
+    }
+
+    &.show {
+      max-width: 100%;
+
+      > a {
+        &.search-boats-tab {
+          display: flex !important;
+        }
+      }
+    }
+
+    > a {
+      cursor: pointer;
+      text-decoration: none;
+      font-family: "proxima_novaregular", Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.33;
+      margin-right: 30px;
+      color: rgba(0, 20, 36, 1);
+      transition: ease-in-out 0.5s all;
+    }
+  }
 }
