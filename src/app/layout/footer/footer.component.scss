@@ -1,0 +1,10 @@
+@import 'mixins';
+@import 'variables';
+
+.footer-component {
+  position: relative;
+  z-index: 100;
+  height: $header-height;
+  background-color: $white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
