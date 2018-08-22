@@ -2,5 +2,80 @@
 @import 'variables';
 
 .home-page-component {
-  
+  section {
+    &.hero-section {
+      background-image: url('assets/images/cindy-tang-25654-unsplash.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      height: 900px;
+      border-bottom: 1px solid $black;
+      
+      .left-container {
+        background: RGBA(39, 103, 240, .5);
+      }
+      
+      .right-container {
+        background: $white;
+        padding: 90px;
+
+        h1 {
+          font-family: 'Avenir-Black';
+          font-size: 50px;
+          line-height: 58px;
+          max-width: 500px;
+          color: $black;
+        }
+
+        .parametric-text {
+          font-family: 'Avenir-Medium';
+          font-size: 20px;
+          line-height: 30px;
+          margin-bottom: 45px;
+
+          span {
+            font-family: 'Avenir-Heavy';
+          }
+        }
+
+        .submit {
+          input {
+            width: 240px;
+            border: 1px solid $light-blue;
+            padding: 18px;
+
+            &::placeholder {
+              font-family: 'Avenir-Book';
+              font-size: 20px;
+              line-height: 16px;
+            }
+          }
+
+          button {
+            min-width: 103px;
+          }
+        }
+      }
+    }
+
+    &.what-is-windshift {
+      padding: 111px 180px;
+
+      .extra-big-title {
+
+      }
+
+      .line-separator {
+        background: $light-blue;
+      }
+
+      .medium-text {
+        max-width: 560px;
+      }
+
+      img {
+        margin-left: 220px;
+      }
+    }
+  }
 }

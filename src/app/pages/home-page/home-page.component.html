@@ -1,3 +1,37 @@
 <div class="home-page-component">
-  HOOME PAGE WORKS!
+  <section class="hero-section d-flex">
+    <div class="left-container flex-1">
+    </div>
+    <div class="right-container flex-1 d-flex flex-column justify-content-center">
+      <h1>The calm before, during & after the storm</h1>
+      <div class="parametric-text">
+        <div>Parametric Wind Security</div>
+        <div>Powered by <span>WKFC & Riskpulse</span></div>
+      </div>
+      <div class="d-flex">
+        <button
+          class="common-blue-button btn mr-5"
+          (click)="getQuote()">
+          <span class="text-uppercase">GET A QUOTE!</span>
+        </button>
+        <div class="submit d-flex">
+          <input type="text" placeholder="Sign up or inquire!"/>
+          <button
+            class="common-blue-button btn"
+            (click)="submit()">
+            <span class="text-uppercase">SUBMIT</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="what-is-windshift d-flex justify-content-center">
+    <div>
+      <div class="extra-big-title">What is WindShift?</div>
+      <div class="line-separator"></div>
+      <div class="medium-text">WindShift is an emerging type of supplemental windstorm insurance that uses “parametric triggers” for losses, creating a transparent payout process significantly quicker than traditional insurance.</div>
+      <div class="medium-text">If a loss event occurs in your area, you will get paid promptly.</div>
+    </div>
+    <img src="assets/images/svg/shield icon.svg" />
+  </section>
 </div>
