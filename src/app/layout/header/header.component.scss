@@ -12,7 +12,7 @@
 
   .header-section {
     width: 100%;
-    max-width: 1445px;
+    // max-width: 1445px;
   }
 
   &.opacity {
@@ -43,13 +43,13 @@
 
     .app-logo {
       cursor: pointer;
-      min-width: 171px;
+      min-width: 250px;
       height: 100%;
       background-color: $light-blue;
       transition: ease-in-out 0.5s all;
       
       img {
-        max-width: 91px;
+        max-width: 171px;
       }
     }
   }
@@ -78,9 +78,10 @@
     > a {
       cursor: pointer;
       text-decoration: none;
-      font-family: "proxima_novaregular", Arial, sans-serif;
-      font-size: 15px;
-      line-height: 1.33;
+      font-family: 'Avenir-Medium';
+      font-size: 16px;
+      letter-spacing: 1px;
+      line-height: 22px;
       margin-right: 30px;
       color: rgba(0, 20, 36, 1);
       transition: ease-in-out 0.5s all;

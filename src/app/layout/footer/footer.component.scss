@@ -2,11 +2,11 @@
 @import 'variables';
 
 .footer-component {
-  background: $light-blue;
+  background: linear-gradient(0deg, #003AC0 0%, #0A46CC 100%, #2767F0 100%);
   justify-content: space-evenly;
-  height: 230px;
+  height: $footer-height;
   margin-top: 36px;
-  padding: 30px;
+  padding: 40px;
 
   .logo {
     max-width: 70px;
@@ -14,23 +14,28 @@
   }
 
   .title {
-    font-family: "proxima_novabold", Arial, sans-serif;
+    font-family: 'Avenir-Black';
     font-size: 16px;
-    letter-spacing: 2px;
+    letter-spacing: 0.6px;
+    line-height: 27px;
     color: $white;
-    margin-bottom: 32px;
+    margin-bottom: 13px;
   }
 
   a {
     cursor: pointer;
-    font-family: "proxima_novaregular", Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.67;
-    color: $white;
+    font-family: 'Avenir-Medium';
+    font-size: 12px;
+    line-height: 16px;
+    color: #FCFCFC;
 
     &:hover {
       color: $white;
       text-decoration: none;
     }
+  }
+
+  .middle-col {
+    margin: 0 80px;
   }
 }
