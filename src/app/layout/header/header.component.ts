@@ -8,10 +8,21 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   isScrolledDown: boolean;
+  isBlueLogo: boolean;
 
   constructor(
     private router: Router
-  ) { }
+  ) {
+    router.events.subscribe((evt) => {
+      if (evt instanceof NavigationEnd) {
+        if (evt.url.includes('/quote')) {
+          this.isBlueLogo = true;
+        } else {
+          this.isBlueLogo = false;
+        }
+      }
+    });
+  }
 
   ngOnInit() {
   }

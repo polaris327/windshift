@@ -1,3 +1,60 @@
 <div class="quote-page-component">
-  Quote page works!
+  <section class="coverage-section d-flex flex-column justify-content-start align-items-center">
+    <div class="extra-big-title text-center">Get your quote now!</div>
+    <form class="get-quote-form" name="quoteForm" [formGroup]="quoteForm" (ngSubmit)="getMyQuote()" novalidate>
+      <div class="d-flex">
+        <div class="form-group">
+          <input class="form-control" placeholder="First Name" formControlName="firstName">
+          <div class="form-field-error" *ngIf="quoteFormErrors.firstName.required">
+            This is required!
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-control" placeholder="Last Name" formControlName="lastName">
+          <div class="form-field-error" *ngIf="quoteFormErrors.lastName.required">
+            This is required!
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-control" placeholder="Middle Initial" formControlName="middleInitial">
+          <div class="form-field-error" *ngIf="quoteFormErrors.middleInitial.required">
+            This is required!
+          </div>
+        </div>    
+      </div>
+      <div class="d-flex">
+        <div class="form-group">
+          <input class="form-control" placeholder="Address" formControlName="address">
+          <div class="form-field-error" *ngIf="quoteFormErrors.address.required">
+            This is required!
+          </div>
+        </div>
+      </div>
+      <div class="d-flex">
+        <div class="form-group">
+          <input class="form-control" placeholder="Occupany Type (Business, Home, etc)" formControlName="occupancyType">
+          <div class="form-field-error" *ngIf="quoteFormErrors.occupancyType.required">
+            This is required!
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-control" placeholder="Year Built" formControlName="yearBuilt">
+          <div class="form-field-error" *ngIf="quoteFormErrors.yearBuilt.required">
+            This is required!
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-control" placeholder="Square Footage" formControlName="squareFootage">
+          <div class="form-field-error" *ngIf="quoteFormErrors.squareFootage.required">
+            This is required!
+          </div>
+        </div>    
+      </div>  
+      <button
+        class="common-blue-button btn"
+        [disabled]="quoteForm.invalid">
+        <span class="text-uppercase"> GET MY QUOTE</span>
+      </button>
+    </form>
+  </section>
 </div>

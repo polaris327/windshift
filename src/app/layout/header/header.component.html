@@ -1,7 +1,9 @@
 <div class="header-component d-none d-sm-flex" [class.opacity]="!isScrolledDown">
   <div class="header-section d-none d-sm-flex justify-content-between">
     <div class="left-nav-container d-flex align-items-center">
-      <a class="app-logo d-flex align-items-center justify-content-center" routerLink="/home"><img src="assets/images/svg/logo_white.svg"/></a>
+      <a class="app-logo d-flex align-items-center justify-content-center" [class.white-bg]="isBlueLogo" routerLink="/home">
+        <img [src]="isBlueLogo ? 'assets/images/svg/logo_blue.svg' : 'assets/images/svg/logo_white.svg'"/>
+      </a>
     </div>
     <div [class.show]="!isScrolledDown" class="right-nav-container d-none d-sm-flex align-items-center justify-content-end">
       <a routerLink="/home" class="tab tab d-flex justify-content-center align-items-center">HOME</a>
