@@ -4,57 +4,103 @@
     <form class="get-quote-form" name="quoteForm" [formGroup]="quoteForm" (ngSubmit)="getMyQuote()" novalidate>
       <div class="d-flex">
         <div class="form-group">
-          <input class="form-control" placeholder="First Name" formControlName="firstName">
+          <input class="form-control primary-input" placeholder="First Name" formControlName="firstName">
           <div class="form-field-error" *ngIf="quoteFormErrors.firstName.required">
             This is required!
           </div>
         </div>
         <div class="form-group">
-          <input class="form-control" placeholder="Last Name" formControlName="lastName">
+          <input class="form-control primary-input" placeholder="Last Name" formControlName="lastName">
           <div class="form-field-error" *ngIf="quoteFormErrors.lastName.required">
             This is required!
           </div>
         </div>
         <div class="form-group">
-          <input class="form-control" placeholder="Middle Initial" formControlName="middleInitial">
+          <input class="form-control primary-input" placeholder="Middle Initial" formControlName="middleInitial">
           <div class="form-field-error" *ngIf="quoteFormErrors.middleInitial.required">
             This is required!
           </div>
         </div>    
       </div>
-      <div class="d-flex">
+      <div class="d-flex mt-25">
         <div class="form-group">
-          <input class="form-control" placeholder="Address" formControlName="address">
+          <input class="form-control middle-size-input" placeholder="Address" formControlName="address">
           <div class="form-field-error" *ngIf="quoteFormErrors.address.required">
             This is required!
           </div>
         </div>
       </div>
-      <div class="d-flex">
+      <div class="d-flex mt-25">
         <div class="form-group">
-          <input class="form-control" placeholder="Occupany Type (Business, Home, etc)" formControlName="occupancyType">
+          <input class="form-control middle-size-input" placeholder="Occupany Type (Business, Home, etc)" formControlName="occupancyType">
           <div class="form-field-error" *ngIf="quoteFormErrors.occupancyType.required">
             This is required!
           </div>
         </div>
         <div class="form-group">
-          <input class="form-control" placeholder="Year Built" formControlName="yearBuilt">
+          <input class="form-control primary-input" placeholder="Year Built" formControlName="yearBuilt">
           <div class="form-field-error" *ngIf="quoteFormErrors.yearBuilt.required">
             This is required!
           </div>
         </div>
         <div class="form-group">
-          <input class="form-control" placeholder="Square Footage" formControlName="squareFootage">
+          <input class="form-control primary-input" placeholder="Square Footage" formControlName="squareFootage">
           <div class="form-field-error" *ngIf="quoteFormErrors.squareFootage.required">
             This is required!
           </div>
         </div>    
-      </div>  
-      <button
-        class="common-blue-button btn"
-        [disabled]="quoteForm.invalid">
-        <span class="text-uppercase"> GET MY QUOTE</span>
-      </button>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button
+          class="common-blue-button btn"
+          [disabled]="quoteForm.invalid">
+          <span class="text-uppercase"> GET MY QUOTE</span>
+        </button>
+      </div>
     </form>
+  </section>
+
+  <section class="our-plans d-flex">
+    <div class="position-relative w-100 d-inline-flex flex-column justify-content-start align-items-center">
+      <div class="blue-angule-bg"></div>
+      <div class="sub-container d-inline-flex flex-column justify-content-start align-items-center">
+        <div class="extra-big-title text-center">Our Plans</div>
+        <div class="card-container w-100 d-inline-flex justify-content-center align-items-center">
+          <div class="white-card d-flex flex-column justify-content-start align-items-center">
+            <div class="card-content flex-1">
+              <div class="card-blue-text text-center">$100,000</div>
+              <div class="card-text text-left">Premium <br/>Deductible <br/>Trigger</div>
+            </div>
+            <div class="card-footer flex-0 w-100">
+              <button class="card-blue-button w-100 text-center">
+                <span class="text-uppercase">CHOOSE THIS PLAN</span>
+              </button>
+            </div>
+          </div>
+          <div class="white-card d-flex flex-column justify-content-start align-items-center">
+            <div class="card-content flex-1">
+              <div class="card-blue-text text-center">$1,000,000</div>
+              <div class="card-text text-left">Premium <br/>Deductible <br/>Trigger</div>
+            </div>
+            <div class="card-footer flex-0 w-100">
+              <button class="card-blue-button w-100 text-center">
+                <span class="text-uppercase">CHOOSE THIS PLAN</span>
+              </button>
+            </div>
+          </div>
+          <div class="white-card d-flex flex-column justify-content-start align-items-center">
+            <div class="card-content flex-1">
+              <div class="card-blue-text text-center">$3,000,000</div>
+              <div class="card-text text-left">Premium <br/>Deductible <br/>Trigger</div>
+            </div>
+            <div class="card-footer flex-0 w-100">
+              <button class="card-blue-button w-100 text-center">
+                <span class="text-uppercase">CHOOSE THIS PLAN</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </div>

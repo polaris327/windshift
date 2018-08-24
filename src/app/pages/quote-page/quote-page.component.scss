@@ -2,5 +2,146 @@
 @import 'variables';
 
 .quote-page-component {
+  section {
+    &.coverage-section {
+      padding-top: 169px;
 
+      .extra-big-title {
+        color: #4a4a4a;
+      }
+
+      .get-quote-form {
+        margin-top: 48px;
+
+        input {
+          height: 50px;
+          border: 2px solid #2767F0;
+          border-radius: 2px;
+          margin-left: 41.5px;
+          padding: 19px;
+          color: #424241;
+          font-family: 'Avenir-Light';
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 14px;
+
+          &::placeholder {
+            opacity: 0.4;
+          }
+
+          &.primary-input {
+            width: 222px;
+          }
+
+          &.middle-size-input {
+            width: 468px;
+          }
+        }
+      }
+
+      .common-blue-button {
+        margin-top: 48px;
+        height: 56px;
+        width: 317px;
+        border-radius: 2px;
+        color: #2767F0
+
+        span {
+          color: #FCFCFC;
+          font-family: 'Avenir-Heavy';
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          line-height: 22px;
+        }
+      }
+
+      .mt-25 {
+        margin-top: 25px;
+      }
+    }
+
+    &.our-plans {
+      padding-bottom: 98px;
+
+      .position-relative {
+        position: relative;
+        
+        .blue-angule-bg {
+          position: absolute;
+          z-index: 0;
+          width: 100%;
+          height: 100%;
+          clip-path: polygon(0 25%, 100% 0, 100% 70%, 0 70%);
+          background: linear-gradient(1.22deg, #003AC0 0%, #2767F0 100%);
+          overflow: hidden;
+        }
+
+        .sub-container {
+          max-width: 1445px;
+          z-index: 1;
+          padding-top: 140px;
+
+          .extra-big-title {
+            color: #fff;
+          }
+
+          .card-container {
+            margin-top: 60px;
+
+            .white-card {
+              width: 332px;
+              height: 300px;
+              margin: 0 34px;
+              background-color: #fff;
+              border-radius: 8px;
+              box-shadow: 2px 2px 8px 0 rgba(216,216,216,0.49);
+
+              .card-content {
+                padding: 29px;
+
+                .card-blue-text {
+                  color: #2767F0;
+                  font-family: 'Avenir-Heavy';
+                  font-size: 28px;
+                  font-weight: 900;
+                  letter-spacing: 1.28px;
+                  line-height: 38px;
+                }
+
+                .card-text {
+                  width: 124px;
+                  margin-top: 38px;
+                  color: #4A4A4A;
+                  font-family: 'Avenir-Medium';
+                  font-size: 24px;
+                  font-weight: 900;
+                  line-height: 33px;
+                }
+              }
+
+              .card-footer {
+                padding: 0px;
+
+                .card-blue-button {
+                  height: 62px;
+                  background-color: #2767F0;
+                  border: 0px;
+
+                  span {
+                    color: #FCFCFC;
+                    font-family: 'Avenir-Heavy';
+                    font-size: 16px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    line-height: 22px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
