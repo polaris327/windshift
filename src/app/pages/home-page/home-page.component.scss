@@ -355,8 +355,16 @@
           clip-path: polygon(0 160px, 100% 160px, 100% 100%, 0 75%);
           background: url(../../../assets/images/freestocks-org-570357-unsplash.jpg);
           background-size: cover;
+          background-position: bottom;
           overflow: hidden;
           z-index: 0;
+
+          .blue-overlay {
+            background-color: rgba(0, 58, 192, 0.75);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+          }
         }
 
         .sub-container {
@@ -431,5 +439,42 @@
         }
       }
     }
+
+    &.not-so-fast-section {
+      .content {
+        max-width: 535px;
+        margin: auto;
+        margin-top: 56px;
+
+        .text-box {
+          flex: 1 0 1px;
+          margin-bottom: 42px;
+
+          > div {
+            &:first-child {
+              font-family: 'Avenir-Medium';
+              font-size: 24px;
+              line-height: 18px;
+              color: $body-text-color;
+              margin-bottom: 19px;
+            }
+      
+            &:last-child {
+              font-family: 'Avenir-Medium';
+              font-size: 18px;
+              line-height: 25px;
+              color: $body-text-color;
+            }                       
+          }
+        }
+      }
+    }
+  }
+
+  .tiny-blue-box {
+    height: 13px;
+    width: 13px;
+    background-color: $light-blue;
+    margin-right: 21px;
   }
 }
