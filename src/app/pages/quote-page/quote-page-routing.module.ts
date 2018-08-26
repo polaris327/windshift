@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { QuotePageComponent } from './quote-page.component';
 
 const routes: Routes = [
-  // {path: '', component: QuotePageComponent}
+  {path: '', component: QuotePageComponent}
 ];
 
 @NgModule({
