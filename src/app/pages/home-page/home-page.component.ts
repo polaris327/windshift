@@ -12,4 +12,11 @@ export class HomePageComponent implements OnInit {
   ngOnInit() {
   }
 
+  getQuote() {
+
+  }
+
+  submit() {
+
+  }
 }
